@@ -1,7 +1,7 @@
 name: proste_logger
 description: Flutter ultra-long text log printing, displaying all log information on the output platform.
 version: 1.0.0
-homepage:
+homepage: https://github.com/xyhxx/proste_logger
 
 environment:
   sdk: ">=2.12.0 <3.0.0"

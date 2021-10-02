@@ -14,7 +14,8 @@ class Demo {
 
 void main() {
   runApp(const Application());
-  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
+  SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
   const SystemUiOverlayStyle style = SystemUiOverlayStyle(
     statusBarColor: Colors.transparent,
   );

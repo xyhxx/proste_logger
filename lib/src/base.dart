@@ -45,7 +45,8 @@ class ProsteLogger {
   /// write header and footer
   _Line _formatLine([String? title]) {
     final label = title ?? basic.title;
-    final split = List.filled((basic.limitLength / 2 - label.length).floor(), '-').join();
+    final split =
+        List.filled((basic.limitLength / 2 - label.length).floor(), '-').join();
     final startLine = '$split${label}$split';
 
     final endLineStr = StringBuffer();
@@ -85,13 +86,16 @@ class ProsteLogger {
   }
 
   /// print info msg
-  void i(dynamic msg, {String? title, bool? format}) => _log(msg, LogMode.info, title, format);
+  void i(dynamic msg, {String? title, bool? format}) =>
+      _log(msg, LogMode.info, title, format);
 
   /// print error msg
-  void e(dynamic msg, {String? title, bool? format}) => _log(msg, LogMode.error, title, format);
+  void e(dynamic msg, {String? title, bool? format}) =>
+      _log(msg, LogMode.error, title, format);
 
   /// print warning msg
-  void w(dynamic msg, {String? title, bool? format}) => _log(msg, LogMode.warning, title, format);
+  void w(dynamic msg, {String? title, bool? format}) =>
+      _log(msg, LogMode.warning, title, format);
 
   /// jungle neet to call [_segmentationLog]
   void _log(dynamic message, LogMode mode, String? title, bool? format) {
@@ -143,7 +147,8 @@ class ProsteLogger {
   }
 
   /// output
-  void _outprint(String msg) => msg.length < _limitLength ? printPen(msg) : _segmentationLog(msg);
+  void _outprint(String msg) =>
+      msg.length < _limitLength ? printPen(msg) : _segmentationLog(msg);
   void _outPut(dynamic msg, LogMode mode, _Line line) {
     final stack = StackTrace.current;
     final traces = formatTrack(stack);
