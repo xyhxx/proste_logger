@@ -1,5 +1,7 @@
 <img src="https://raw.githubusercontent.com/xyhxx/program_preview/master/logo/logger.png" />
 
+Englist | <a href="https://github.com/xyhxx/proste_logger/blob/main/doc/cn.md">中文</a>
+
 # proste_logger
 
 A simple, easy, used plug-in that prints out long text and formats Map or List data structures. You can also customize the title information of the print area, the color of the text, etc. . The print content also shows the trigger area and the trigger method.
